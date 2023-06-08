@@ -1,0 +1,148 @@
+/*
+    PT SERFIF texto
+    Cherry Bomb One title de pag
+*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+
+}
+
+
+body {
+    background-color: rgba(178, 178, 178, .05);
+}
+
+/*
+    ------------------------- Headers ----------------------------------
+*/
+.headers {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 3%;
+    padding-block: 1%;
+    justify-content: space-between;
+    z-index: 4;
+
+}
+
+.headers div {
+    flex-direction: row;
+}
+
+.headers .container1 {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.headers .buttons,
+.headers .container2 {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+}
+
+.headers .buttons button,
+.headers .container2 button {
+    background-color: transparent;
+    padding-inline: 12px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.headers .container2 button:nth-child(2) {
+    background-color: #f3ce1c;
+    border-radius: 250px;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+
+
+
+
+.logotipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.logotipo h1 {
+    font-family: 'Rakkas', cursive;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
+
+/*      Buttones Header */
+
+.headers .container1 .btn:after,
+.headers .container2 .btn:after {
+    content: "";
+    position: absolute;
+    top: 8.5%;
+    width: 8px;
+    height: 8px;
+    background: #f3ce1c;
+    border-radius: 12px;
+    opacity: 0;
+    transition-duration: 500ms;
+
+}
+
+.headers .container1 .btn:hover:after {
+    top: 7.5%;
+    opacity: 1;
+}
+
+
+.headers .container1 .buttons .btn:nth-child(1):after {
+    left: 20%;
+}
+
+.headers .container1 .buttons .btn:nth-child(2):after {
+    left: 27%;
+}
+
+.headers .container1 .buttons .btn:nth-child(3):after {
+    left: 33%;
+}
+
+.headers .container1 .buttons .btn:nth-child(4):after {
+    left: 37.5%;
+}
+
+.headers .container2 .btn {
+    background-color: #f3ce1c;
+    color: white;
+    border-radius: 52px;
+    border: none;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.headers .container2 .btn:hover {
+    box-shadow: 0px 0px 12px #f3cf1ce5,
+        0px 0px 20px #f3ce1c;
+    padding-bottom: 2%;
+    width: 110px;
+    height: 45px;
+    font-size: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

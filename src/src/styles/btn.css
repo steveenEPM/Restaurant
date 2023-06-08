@@ -1,0 +1,48 @@
+:root{
+    --color1:#fbf08d;
+    --color2:#c48d0a;
+}
+
+
+.reservar button {
+
+    display: inline-block;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--color1);
+    color: var(--color2);
+    border:none;
+}
+.reservar button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color2);
+    height: 150px;
+    width: 130%;
+    border-radius: 50%;
+}
+.reservar button:hover {
+    color: var(--color1);
+}
+.reservar button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+.reservar button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+.reservar button:active:before {
+    background: var(--color2);
+    transition: background 0s;
+}

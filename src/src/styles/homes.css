@@ -1,0 +1,61 @@
+.Homes{
+    display: flex;
+    flex-direction: row;
+    padding-inline: 4.5%;
+    margin-block: 3%;
+    position: relative;
+}
+
+
+.Homes .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Homes .container1 h2{
+    font-size: 40px;
+    font-weight: 700;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.Homes .container1 p{
+    width: 90%;
+    font-size: 17px;
+}
+
+.Homes .container2 {
+    position: relative;
+    z-index: 3;
+
+}
+.Homes .container2  img{
+    border-radius: 30px;
+    transform: rotate(-5deg);
+}
+
+.circle1{
+    position: absolute;
+    background-color: #e3b60f;
+    top: -9%;
+    width: 367px;
+    height: 365px;
+    left: 73%;
+    z-index: 1;
+    opacity: .1;
+    border-bottom-left-radius: 226px;
+    border-top-left-radius: 523px;
+}
+
+.circle2{
+    position: absolute;
+    background-color: #815012;
+    top: 32%;
+    width: 585px;
+    height: 398px;
+    left: 57%;
+    z-index: 2;
+    opacity: .1;
+    /* border-bottom-left-radius: 175px; */
+    border-top-left-radius: 424px;
+}

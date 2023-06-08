@@ -1,0 +1,112 @@
+.reservar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 5%;
+}
+
+/*
+        Contenedor 1 -- Informacion
+*/
+
+.reservar .container {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.reservar .container1 h1 {
+    font-weight: bold;
+    color: #e3b60f;
+    font-size: 40px;
+
+}
+
+.reservar .container1 .row,
+.reservar .container2 .row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+
+}
+
+.reservar .container2 {
+    display: flex;
+    border: 1px solid;
+    gap: 12px;
+    width: 500px;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 4px double rgba(0, 0, 0, .4)
+}
+
+.reservar .container2 .form1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reservar .container2 .form1 .row span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.reservar .container2 .form1 .row input,
+.reservar .container2 .form1 .row select {
+    border-radius: 7px;
+    border: 1px solid gray;
+    font-size: 15px;
+    background-color: white;
+    width: 100%;
+    padding: 7px 15px;
+}
+
+.reservar .container2 .form2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.container2 .form2 .data1{
+    display: flex;
+    flex-direction: row;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container2 .form2 .data1 .colI{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.container2 .form2 .data1 .colI span {
+    color:#9c650c;
+    font-weight: bold;
+}
+
+.form2 .containerForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form2 .containerForm .colF {
+    display: flex;
+    flex-direction: row;
+    gap: 12;
+    align-items: center;
+}
+
+.containerForm .colF  input{
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+}

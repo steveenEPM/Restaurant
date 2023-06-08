@@ -14,14 +14,14 @@ export default function BarraMen(){
             <div className="container1">
                 <Logotipo/>
                 <div className="buttons">
-                    <button className="btn" onClick={()=> navigate('/')}>Inicio</button>
-                    <button className="btn" onClick={goAbout}>Acerca de mi</button>
-                    <button className="btn" onClick={()=>navigate('/menu')}>Menu</button>
+                    <button className="btn" onClick={()=> navigate('/')}>Home</button>
+                    <button className="btn" onClick={goAbout}>About me</button>
+                    <button className="btn" onClick={()=>navigate('/menu')}>Main</button>
                 </div>
             </div>
 
             <div className="container2">
-                <button className="btn" onClick={()=>navigate('/reservar')}>Reservar</button>
+                <button className="btn" onClick={()=>navigate('/reservar')}>Reserve</button>
             </div>
 
         </div>

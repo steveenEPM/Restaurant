@@ -11,7 +11,7 @@ export default function Category({ data, onClick }) {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube,Autoplay]}
         spaceBetween={4}
-        slidesPerView={7}
+        slidesPerView={window.innerWidth < 450 ? 3 : 7}
         navigation
         autoplay={{
           delay: 5000,

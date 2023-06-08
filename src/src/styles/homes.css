@@ -1,9 +1,10 @@
-.Homes{
+.Homes {
     display: flex;
     flex-direction: row;
     padding-inline: 4.5%;
     margin-block: 3%;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -12,14 +13,15 @@
     flex-direction: column;
     justify-content: center;
 }
-.Homes .container1 h2{
+
+.Homes .container1 h2 {
     font-size: 40px;
     font-weight: 700;
     width: 80%;
     margin-bottom: 2%;
 }
 
-.Homes .container1 p{
+.Homes .container1 p {
     width: 90%;
     font-size: 17px;
 }
@@ -29,12 +31,13 @@
     z-index: 3;
 
 }
-.Homes .container2  img{
+
+.Homes .container2 img {
     border-radius: 30px;
     transform: rotate(-5deg);
 }
 
-.circle1{
+.circle1 {
     position: absolute;
     background-color: #e3b60f;
     top: -9%;
@@ -47,7 +50,7 @@
     border-top-left-radius: 523px;
 }
 
-.circle2{
+.circle2 {
     position: absolute;
     background-color: #815012;
     top: 32%;
@@ -58,4 +61,42 @@
     opacity: .1;
     /* border-bottom-left-radius: 175px; */
     border-top-left-radius: 424px;
+}
+
+@media screen and (max-width:450px) {
+
+    .Homes {
+        flex-direction: column-reverse;
+        margin-top: 25%;
+    }
+    .Homes .container2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Homes .container2 img {
+        border-radius: 30px;
+        transform: rotate(-5deg);
+        width: 200px;
+        height: 200px;
+        align-self: center;
+    }
+
+    .circle2 {
+        top:8%;
+    }
+
+    .Homes .container1 h2 {
+        margin-top: 12%;
+        font-size: 20px;
+        font-weight: 700;
+      
+    }
+
+
+.Homes .container1 p {
+    width: 90%;
+    font-size: 14px;
+}
+
 }

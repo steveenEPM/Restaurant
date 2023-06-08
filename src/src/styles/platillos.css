@@ -42,7 +42,7 @@
     opacity: 0;
 }
 
-.container-platillos .item-container:hover div{
+.container-platillos .item-container:hover div {
     opacity: 1;
 }
 
@@ -66,5 +66,30 @@
     border-radius: 87px;
     text-transform: capitalize;
     cursor: pointer;
+
+}
+
+@media screen and (max-width:450px) {
+    .platillos h1 {
+        font-size: 23px;
+
+    }
+
+    .platillos .container-platillos {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .platillos .container-platillos .item-container {
+        height: 150px;
+
+    }
+
+    .item-container div span {
+        font-size: 14px;
+
+    }
+
 
 }

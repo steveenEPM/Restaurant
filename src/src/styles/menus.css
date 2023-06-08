@@ -173,3 +173,59 @@
     font-weight: bold;
     top: -4px;
 }
+
+
+@media screen and (max-width:450px) {
+
+
+    .menus .slideshow-container .mySlides {
+        margin-top: 12%;
+        width: 90%;
+        height: 450px;
+        flex-direction: column-reverse;
+        gap: 1px;
+    }
+
+
+    .menus .slideshow-container .mySlides .container1 strong {
+        font-size: 20px;
+        font-weight: bold;
+
+    }
+
+    .menus .slideshow-container .mySlides .container1 div .col span {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+
+    .slideshow-container .mySlides .container2 img {
+        height: 200px;
+        width: 100%;
+    }
+
+    .menus .category {
+        gap: 150px;
+        position: relative;
+        top: -105px;
+    }
+
+    .menus .category .buttons {
+
+        width: 80px;
+        height: 80px;
+        margin-inline: 1302px;
+
+    }
+
+    .menus .category .buttons img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .menus .category   span {
+        top:130px;
+    }
+}

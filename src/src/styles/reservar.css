@@ -64,22 +64,22 @@
     padding: 7px 15px;
 }
 
-.reservar .container2 .form2{
+.reservar .container2 .form2 {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.container2 .form2 .data1{
+.container2 .form2 .data1 {
     display: flex;
     flex-direction: row;
-    gap:15px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
 }
 
 
-.container2 .form2 .data1 .colI{
+.container2 .form2 .data1 .colI {
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -87,7 +87,7 @@
 }
 
 .container2 .form2 .data1 .colI span {
-    color:#9c650c;
+    color: #9c650c;
     font-weight: bold;
 }
 
@@ -104,9 +104,39 @@
     align-items: center;
 }
 
-.containerForm .colF  input{
+.containerForm .colF input {
     flex: 1;
     padding: 12px 20px;
     border: none;
     border-radius: 12px;
+}
+
+
+
+
+@media screen and (max-width:450px) {
+
+    .reservar {
+        flex-direction: column-reverse;
+    }
+
+    .reservar .container2 {
+
+        width: 90%;
+
+    }
+
+
+    .containerForm .colF input {
+        width: 85%;
+    }
+
+    .data1 .colI img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .data1 .colI span{
+        font-size: 8px;
+    }
 }

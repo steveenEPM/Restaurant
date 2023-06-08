@@ -11,8 +11,12 @@ export default function Loading() {
             autoplay
             loop
             src="https://assets10.lottiefiles.com/private_files/lf30_mzwrlhjq.json"
-            style={{ height: '300px', width: '300px', marginTop: '9%' }}
+            style={{ height: size, width: size, marginTop: marginTop}}
         >
         </Player>
     )
 }
+
+const size = window.innerWidth < 374 ? '150px':'300px'
+
+const marginTop  =  window.innerWidth < 374 ? '60%':'9%'
